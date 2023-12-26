@@ -4,8 +4,9 @@ def main():
         'Peso': 275.84,
         'Won': 11.69
     }
-    jumlah = float(input("Jumlah Rupiah: Rp "))
-    mataUang = str(input("Mata uang(Euro/Peso/Won): "))
+    jumlah, mataUang = (
+        float(input("Jumlah Rupiah: Rp ")),
+        str(input("Mata uang(Euro/Peso/Won): ")))
     print("=========================")
     if mataUang in uang:
         print(
