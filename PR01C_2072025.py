@@ -1,16 +1,16 @@
 def main():
     uang = [
-    "seratus ribu",
-    "lima puluh ribu",
-    "dua puluh ribu",
-    "sepuluh ribu",
-    "lima ribu",
-    "dua ribu",
-    "seribu",
-    "lima ratus",
-    "dua ratus",
-    "seratus",
-    "lima puluh"
+        "seratus ribu",
+        "lima puluh ribu",
+        "dua puluh ribu",
+        "sepuluh ribu",
+        "lima ribu",
+        "dua ribu",
+        "seribu",
+        "lima ratus",
+        "dua ratus",
+        "seratus",
+        "lima puluh"
     ]
     nominal = int(input("nominal = "))
     print("menjadi pecahan :")
