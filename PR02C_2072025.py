@@ -12,8 +12,8 @@ def main():
 
     elif jenis == "kemeja":
         tipe = "Kemeja"
-        bahan = "bermotif"
         harga = 100000
+        bahan = "bermotif"
         jenis = str(input("Motif Kemeja(k. kotak-kotak, dan p. polos): "))
         jadi = "kotak-kotak" if jenis == "k" else "polos"
 
