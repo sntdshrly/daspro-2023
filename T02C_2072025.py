@@ -42,5 +42,7 @@ def main():
                 print(dictAngka[puluhan])
             else:
                 print(dictAngka[puluhan] + " " + dictAngka[satuan])
+
+
 if __name__ == '__main__':
     main()

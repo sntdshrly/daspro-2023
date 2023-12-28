@@ -13,7 +13,7 @@ def main():
             totalBuahAlpukat = totalBuahAlpukat + jumlah
         elif buah.lower() == "apel":
             harga = 35000
-            total = total + harga*jumlah
+            total = total + harga * jumlah
             totalBuahApel = totalBuahApel + jumlah
         elif buah.lower() == "jeruk":
             harga = 20000
@@ -22,7 +22,7 @@ def main():
     print(f"""Jumlah Buah Alpukat : {totalBuahAlpukat} kg
 Jumlah Buah Apel : {totalBuahApel} kg
 Jumlah Buah Jeruk : {totalBuahJeruk} kg
-Total Jumlah Buah yaitu {totalBuahAlpukat+totalBuahApel+totalBuahJeruk} kg
+Total Jumlah Buah yaitu {totalBuahAlpukat + totalBuahApel + totalBuahJeruk} kg
 Total Harga Buah Rp {total}""")
 
 
