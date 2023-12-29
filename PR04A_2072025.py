@@ -8,7 +8,7 @@ def main():
     n = 0
     print(f"Deret {muncul} angka, dimulai dari {awal} dengan kelipatan {increment}.")
     while total < muncul:
-        n = n+1
+        n = n + 1
         if (n < muncul):
             print(awal, end=", ")
         else:
