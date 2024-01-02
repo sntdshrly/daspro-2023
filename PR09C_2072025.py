@@ -6,7 +6,7 @@ def main():
     for i in range(0, n, 1):
         array[i] = input()
     # Kata yang dicari
-    cari = input("cari: ")
+    cari = str(input("cari: "))
     print(f"judul yang mengandung kata {cari}:")
     for i in range(0, n, 1):
         if (cari in array[i]):
