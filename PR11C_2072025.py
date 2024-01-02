@@ -21,7 +21,7 @@ def cari_kata(arrKata, arrDigitAngka):
     listHasil = []
     print("Kata yang telah dibuat:")
     for i in range(0, len(arrDigitAngka), 1):
-        tempString = ""  # Digunaka untuk menampung satu kata
+        tempString = ""  # Digunakan untuk menampung satu kata
         data = arrDigitAngka[i]
         for j in range(0, len(data), 1):
             tempString += (arrKata[int(data[j])])
