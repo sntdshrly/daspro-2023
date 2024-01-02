@@ -1,4 +1,4 @@
-def konversiWaktu(jam, menit, detik):
+def konversi_waktu(jam, menit, detik):
     if jam < 10:
         jam = f"0{jam}"
     if menit < 10:
@@ -12,7 +12,7 @@ def main():
         int(input("detik: ")),
         int(input("menit: ")),
         int(input("jam: ")))
-    konversiWaktu(jam, menit, detik)
+    konversi_waktu(jam, menit, detik)
     pilihan = ""
     while (pilihan != 4):
         pilihan = int(input("Jenis waktu yang ingin ditambahkan(1.Detik 2. Menit 3. Jam 4. Exit): "))
@@ -38,7 +38,7 @@ def main():
             if jam >= 24:
                 jam -= 24
         print("Hasil perjumlahan:")
-        konversiWaktu(jam, menit, detik)
+        konversi_waktu(jam, menit, detik)
 
 if __name__ == '__main__':
     main()
