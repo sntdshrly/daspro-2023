@@ -30,22 +30,22 @@ def input_data(n):
 
 def input_persentase():
     print("Masukkan Persentase Nilai")
-    kat_weight = int(input("KAT: "))
-    uts_weight = int(input("UTS: "))
-    uas_weight = int(input("UAS: "))
-    kat_weight /= 100
-    uts_weight /= 100
-    uas_weight /= 100
-    return kat_weight, uts_weight, uas_weight
+    kat_bobot = int(input("KAT: "))
+    uts_bobot = int(input("UTS: "))
+    uas_bobot = int(input("UAS: "))
+    kat_bobot /= 100
+    uts_bobot /= 100
+    uas_bobot /= 100
+    return kat_bobot, uts_bobot, uas_bobot
 
 
-def hitung_bobot(uts, uas, kat, kat_weight, uts_weight, uas_weight):
-    total_bobot = kat_weight + uts_weight + uas_weight
-    return round((kat * kat_weight + uts * uts_weight + uas * uas_weight) / total_bobot, 2)
+def hitung_bobot(uts, uas, kat, kat_bobot, uts_bobot, uas_bobot):
+    total_bobot = kat_bobot + uts_bobot + uas_bobot
+    return round((kat * kat_bobot + uts * uts_bobot + uas * uas_bobot) / total_bobot, 2)
 
 
-def data_rata_rata(A, B, N, kat_weight, uts_weight, uas_weight):
-    min_average = float('inf')
+def data_rata_rata(A, B, N, kat_bobot, uts_bobot, uas_bobot):
+    min_avg = float('inf')
     min_student = ""
 
     for i in range(N):
@@ -54,22 +54,22 @@ def data_rata_rata(A, B, N, kat_weight, uts_weight, uas_weight):
         uts = B[i][0]
         uas = B[i][1]
         kat = B[i][2]
-        average = hitung_bobot(uts, uas, kat, kat_weight,
-                               uts_weight, uas_weight)
-        print(f"Kelas {kls} dengan nama {nm} rata-ratanya {average}")
-        if average < min_average:
-            min_average = average
+        avg = hitung_bobot(uts, uas, kat, kat_bobot,
+                               uts_bobot, uas_bobot)
+        print(f"Kelas {kls} dengan nama {nm} rata-ratanya {avg}")
+        if avg < min_avg:
+            min_avg = avg
             min_student = f"{nm} dari kelas {kls}"
     print(
-        f"Rata-rata terkecil diperoleh {min_student} dengan nilai {min_average}")
+        f"Rata-rata terkecil diperoleh {min_student} dengan nilai {min_avg}")
     return
 
 
 def main():
     N = int(input("Jumlah siswa: "))
     A, B = input_data(N)
-    kat_weight, uts_weight, uas_weight = input_persentase()
-    data_rata_rata(A, B, N, kat_weight, uts_weight, uas_weight)
+    kat_bobot, uts_bobot, uas_bobot = input_persentase()
+    data_rata_rata(A, B, N, kat_bobot, uts_bobot, uas_bobot)
 
 
 if __name__ == '__main__':
