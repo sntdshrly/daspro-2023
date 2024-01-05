@@ -34,12 +34,13 @@ def main():
         n = int(input("N: "))
         if n == 999:
             print("Program selesai")
-        if n < 0 or n >= 129:
+        elif n < 0 or n >= 129:
             print("Angka harus 0 < x < 129")
         else:
             is_palindrome(n)
             is_square(n)
             is_convert_binary(n)
+        print("================================================")
 
 if __name__ == '__main__':
     main()
