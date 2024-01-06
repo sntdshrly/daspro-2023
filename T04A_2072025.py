@@ -1,6 +1,6 @@
 def main():
     n = int(input("N: "))
-    for i in range(n):
+    for _ in range(n):
         bilangan = int(input())
         if (bilangan % 2 == 0):
             print("Genap")
