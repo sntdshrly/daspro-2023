@@ -1,11 +1,11 @@
 def input_data(n):
     A = []
     B = []
-    for i in range(n):
+    for _ in range(n):
         # Array A
         bilangan = int(input("Array 1: "))
         A.append(bilangan)
-    for i in range(n):
+    for _ in range(n):
         # Array B
         bilangan = int(input("Array 2: "))
         B.append(bilangan)

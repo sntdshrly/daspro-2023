@@ -3,7 +3,7 @@ def alphabet_count():
     n = int(input("N: "))
     while n !=0:
         for i in range(n):
-            print(alphabet[i % len(alphabet)], end=" ")
+            print(alphabet[i % len(alphabet)], end = " ")
         print()
         n = int(input("N: "))
     print("Program selesai")

@@ -8,13 +8,13 @@ def sequential_search(n, cari, array):
     i = 0
     while i < n and array[i] != cari:
         i += 1
-    if i < n:
+    if i <= n - 1:
         return i
     else:
         return False
 
 def tampil(indexCari, cari):
-    if indexCari:
+    if indexCari is not False:
         print(f"Angka {cari} ditemukan pada indeks ke-{indexCari}.")
     else:
         print(f"Angka {cari} tidak ditemukan.")
@@ -24,7 +24,7 @@ def main():
     array = input_array(n)
     cari = int(input("Angka yang dicari: "))
     indexCari = sequential_search(n, cari, array)
-    tampil(n, indexCari, cari)
+    tampil(indexCari, cari)
 
 
 if __name__ == '__main__':

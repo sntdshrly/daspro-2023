@@ -5,7 +5,7 @@ def main():
     jauh = float('-inf')
     jumlahPenumpang = int(input("Jumlah Penumpang : "))
     print("====================================")
-    for i in range(jumlahPenumpang):
+    for _ in range(jumlahPenumpang):
         nama, tujuan, jarakTempuh = (
             str(input("Nama : ")),
             str(input("Tujuan : ")),

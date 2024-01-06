@@ -3,7 +3,7 @@ def main():
     totalBuahAlpukat = 0
     totalBuahApel = 0
     totalBuahJeruk = 0
-    for i in range(3):
+    for _ in range(3):
         buah = str(input("Buah(Alpukat/Apel/Jeruk) : "))
         jumlah = int(input(f"Jumlah {buah.capitalize()} (kg) : "))
         print("=====================")

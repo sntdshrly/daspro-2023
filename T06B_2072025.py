@@ -1,8 +1,8 @@
 def box(n):
     count = 1
     if n < 4:
-        for i in range(n):
-            for j in range(n):
+        for _ in range(n):
+            for _ in range(n):
                 if count < 10:
                     print(f" {count} ", end="")
                 else:
@@ -11,8 +11,8 @@ def box(n):
             print()
     
     else:
-        for i in range(n):
-            for j in range(n):
+        for _ in range(n):
+            for _ in range(n):
                 if count < 10:
                     print(f" 0{count}", end="")
                 else:
